@@ -1,5 +1,10 @@
 import React from 'react';
 
+import aboutBg1 from '../img/about-bg1.svg';
+import aboutBg2 from '../img/about-bg2.svg';
+
+import '../css/about.css';
+
 const About = () => {
 
     return (
@@ -9,10 +14,15 @@ const About = () => {
                     Обо мне
                 </h5>
                 <div className='about__desc__text'>
-                    Привет! Меня зовут Виталий. I’m a UI Designer and a instrutor based in Montreal. I’m curently working with Design+Code. I’m passionate about creating digital experiences and teaching design. My goal is to help beginners to grow their skills...read more
+                    Привет! Меня зовут Виталий.
+                    Я занимаюсь Fron-end разработкой в общей сложности около 3х лет.
+                    Привет! Меня зовут Виталий.
+                    Я занимаюсь Fron-end разработкой в общей сложности около 3х лет.
+                    Привет! Меня зовут Виталий.
+                    Я занимаюсь Fron-end разработкой в общей сложности около 3х лет.
                 </div>
-                <img src className="about__bg1" alt="bg pic" />
-                <img src className="about__bg2" alt="bg pic" />
+                <img src={aboutBg1} className="about__bg1" alt="bg pic" />
+                <img src={aboutBg2} className="about__bg2" alt="bg pic" />
             </div>
         </section>
     )

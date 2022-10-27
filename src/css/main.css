@@ -1,0 +1,41 @@
+.main {
+    position: relative;
+    padding-top: 50px;
+}
+
+.main__bg1, .main__bg2 {
+    position: absolute;
+}
+
+.main__bg1 {
+    top: 0;
+    left: 0;
+    z-index: -5;
+}
+
+.main__bg2 {
+    bottom: 0;
+    right: 0;
+    z-index: -5;
+}
+
+.main__desc {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.main__desc__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 130%;
+}
+
+.main__desc__btns {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 60px;
+}
