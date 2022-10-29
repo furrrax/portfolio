@@ -4,6 +4,9 @@ const WorkSlider = () => {
 
     return (
         <div className="work__slider">
+            <h5 className='work__title'>
+                Мои работы
+            </h5>
             <ul className="work__slider__wrap">
                 <li className="work__slider__item">
                     <img src className="work__slider__pic" alt="slider pic" />

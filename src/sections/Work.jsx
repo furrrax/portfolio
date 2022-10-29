@@ -6,11 +6,9 @@ const Work = () => {
 
     return (
         <section class="work">
-            <h5 className='work__title'>
-                Мои работы
-            </h5>
             <WorkSlider />
-            <img src className="work__bg" alt="bg pic" />
+            <img src className="work__bg1" alt="bg pic" />
+            <img src className="work__bg2" alt="bg pic" />
         </section>
     )
 }
