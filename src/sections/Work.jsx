@@ -2,13 +2,16 @@ import React from 'react';
 
 import WorkSlider from '../components/WorkSlider';
 
+import workBg from '../img/work-bg.svg';
+
+import '../css/work.css';
+
 const Work = () => {
 
     return (
         <section class="work">
             <WorkSlider />
-            <img src className="work__bg1" alt="bg pic" />
-            <img src className="work__bg2" alt="bg pic" />
+            <img src={workBg} className="work__bg" alt="bg pic" />
         </section>
     )
 }
