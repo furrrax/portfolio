@@ -106,10 +106,3 @@
     height: 200px;
     resize: none;
 }
-
-.contacts__bg {
-    position: absolute;
-    right: 0;
-    bottom: -55%;
-    z-index: -5;
-}

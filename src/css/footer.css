@@ -1,4 +1,5 @@
 .footer {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,6 +15,19 @@
     border-top: 2px solid rgba(255, 255, 255, 0.15);
     padding-top: 25px;
     padding-bottom: 25px;
+}
+
+.footer__bg1 {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+}
+
+.footer__bg2 {
+    position: absolute;
+    left: 0;
+    top: -50%;
 }
 
 .socials {

@@ -58,6 +58,10 @@ section {
   justify-content: center;
 }
 
+.wrapper {
+  position: relative;
+}
+
 .btn {
   display: flex;
   align-items: center;

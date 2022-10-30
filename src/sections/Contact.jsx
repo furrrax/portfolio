@@ -2,7 +2,6 @@ import React from 'react';
 
 import Form from '../components/Form';
 
-import contactBg from '../img/contact-bg.svg';
 import iconMail from '../img/icons/icon-mail.svg';
 import iconTelegram from '../img/icons/icon-telegram.svg';
 import '../css/contact.css';
@@ -30,7 +29,7 @@ const Contact = () => {
                                 </a>
                             </li>
                             <li className="contacts__item">
-                                <a href className="contacts__item__link">
+                                <a href="https://t.me/FURRRAX" className="contacts__item__link">
                                     <div className="contacts__item__img">
                                         <img src={iconTelegram} className="contacts__item__pic" alt="contacts pic" />
                                     </div>
@@ -42,7 +41,6 @@ const Contact = () => {
                     <Form />
                 </div>
             </div>
-            <img src={contactBg} className="contacts__bg" alt="contacts bg pic" />
         </section>
     )
 }
