@@ -1,7 +1,9 @@
 import React from 'react';
 
-import Menu from './Menu';
-import Socials from './Socials';
+import Menu from '../components/Menu';
+import Socials from '../components/Socials';
+
+import '../css/footer.css';
 
 const Footer = () => {
 
@@ -13,6 +15,7 @@ const Footer = () => {
                 <div className="footer__creator__text">
                     Личная страница Front-end разработчика
                 </div>
+                &nbsp;
                 <a href="mailto:cjuiceone@gmail.com" className="footer__creator__link">Виталия Вязового</a>
             </div>
         </footer>

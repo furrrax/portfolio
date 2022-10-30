@@ -7,7 +7,7 @@ import Main from './sections/Main';
 import About from './sections/About';
 import Work from './sections/Work';
 import Contact from './sections/Contact';
-import Footer from './components/Footer';
+import Footer from './sections/Footer';
 
 function App() {
   return (

@@ -2,6 +2,7 @@ body {
   background: #0F103F;
   font-family: 'Roboto';
   color: #ffffff;
+  overflow-x: hidden;
 }
 
 ul, p, h1, h2, h3, h4, h5, h6 {
@@ -11,11 +12,16 @@ ul, p, h1, h2, h3, h4, h5, h6 {
 
 ul > li, li {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
 }
 
 button {
@@ -27,9 +33,23 @@ button {
 
 input {
   outline: none;
+  padding: 0;
+  margin: 0;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder,
+input:-ms-input-placeholder, textarea:-ms-input-placeholder,
+input::-ms-input-placeholder, textarea::-ms-input-placeholder,
+input::placeholder, textarea::placeholder {
+  color: #ffffff;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ffffff;
 }
 
 section {
+  position: relative;
   width: 100vw;
   height: 100vh;
   /* max-width: 1440px; */
