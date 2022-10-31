@@ -19,6 +19,12 @@
 .sidebar__item {
     position: relative;
     margin-bottom: 100px;
+    transition: transform .6s;
+}
+
+.sidebar__item:hover {
+    transform: scale(1.2);
+    transition: transform .6s;
 }
 
 .sidebar__item.active:after {

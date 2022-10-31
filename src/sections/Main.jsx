@@ -17,7 +17,7 @@ const Main = () => {
                     Виталий Вязовой
                 </h1>
                 <div className="main__desc__btns">
-                    <a href className="main__desc__btn btn">Скачать резюме</a>
+                    <a href="#" className="main__desc__btn btn">Скачать резюме</a>
                 </div>
             </div>
             <img src={bg1} className="main__bg1" alt="bg pic" />

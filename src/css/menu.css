@@ -4,6 +4,12 @@
 
 .menu__item {
     margin-right: 120px;
+    transition: .6s;
+}
+
+.menu__item:hover {
+    transform: scale(1.2);
+    transition: .6s;
 }
 
 .menu__item:last-child {

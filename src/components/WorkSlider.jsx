@@ -11,7 +11,7 @@ const WorkSlider = () => {
             </h5>
             <ul className="work__slider__list">
                 <li className="work__slider__item">
-                    <a href className="work__slider__link">
+                    <a href="#" className="work__slider__link">
                         <div className="work__slider__img">
                             <img src={workSlide1} className="work__slider__pic" alt="slider pic" />
                         </div>
@@ -19,7 +19,7 @@ const WorkSlider = () => {
                     </a>
                 </li>
                 <li className="work__slider__item active">
-                    <a href className="work__slider__link">
+                    <a href="#" className="work__slider__link">
                         <div className="work__slider__img">
                             <img src={workSlide1} className="work__slider__pic" alt="slider pic" />
                         </div>
@@ -27,7 +27,7 @@ const WorkSlider = () => {
                     </a>
                 </li>
                 <li className="work__slider__item">
-                    <a href className="work__slider__link">
+                    <a href="#" className="work__slider__link">
                         <div className="work__slider__img">
                             <img src={workSlide1} className="work__slider__pic" alt="slider pic" />
                         </div>

@@ -7,32 +7,27 @@ import iconContact from '../img/icons/icon-menu-contact.svg';
 
 const Menu = () => {
 
+    const menuPics = [iconHome, iconAbout, iconWork, iconContact];
+    const links = ['.main', '.about', '.work', '.contact'];
+    const menuText = ['Главная', 'Обо мне', 'Мои работы', 'Связаться'];
+
+    const scrollHandle = (event) => {
+        event.preventDefault();
+        const sectionLink = event.currentTarget.getAttribute('href');
+        console.log(sectionLink)
+        document.querySelector(`${sectionLink}`).scrollIntoView({behavior: "smooth", block: "start"});
+    }
+
     return (
         <ul className='menu'>
-            <li className='menu__item'>
-                <a href className="menu__link">
-                    <img src={iconHome} className="menu__icon" alt="menu icon" />
-                    <div className="menu__text">Главная</div>
-                </a>
-            </li>
-            <li className='menu__item'>
-                <a href className="menu__link">
-                    <img src={iconAbout} className="menu__icon" alt="menu icon" />
-                    <div className="menu__text">Обо мне</div>
-                </a>
-            </li>
-            <li className='menu__item'>
-                <a href className="menu__link">
-                    <img src={iconWork} className="menu__icon" alt="menu icon" />
-                    <div className="menu__text">Мои работы</div>
-                </a>
-            </li>
-            <li className='menu__item'>
-                <a href className="menu__link">
-                    <img src={iconContact} className="menu__icon" alt="menu icon" />
-                    <div className="menu__text">Связаться</div>
-                </a>
-            </li>
+            {menuPics.map((menuPic, index) => (
+                <li className='menu__item'>
+                    <a href={links[index]} onClick={scrollHandle} className="menu__link">
+                        <img src={menuPic} className="menu__icon" alt="menu icon" />
+                        <div className="menu__text">{menuText[index]}</div>
+                    </a>
+                </li>
+            ))}
         </ul>
     )
 }

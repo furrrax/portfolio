@@ -44,6 +44,12 @@
     height: 40px;
     border-radius: 50%;
     margin-right: 18px;
+    transition: .6s;
+}
+
+.socials__item:hover {
+    transform: scale(1.2);
+    transition: transform .6s;
 }
 
 .socials__link {
