@@ -16,7 +16,6 @@ const Sidebar = () => {
     const scrollHandle = (event) => {
         event.preventDefault();
         const sectionLink = event.currentTarget.getAttribute('href');
-        console.log(sectionLink)
         document.querySelector(`${sectionLink}`).scrollIntoView({behavior: "smooth", block: "start"});
     }
 

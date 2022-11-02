@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 
 import Main from './sections/Main';
 import About from './sections/About';
@@ -12,6 +12,11 @@ import './App.css';
 import './css/menu.css';
 
 function App() {
+
+  useEffect(() => {
+    document.title = 'Вязовой Виталий | Личная страница Front-end разоработчика';
+  });
+
   return (
     <div className="App">
       <div className='wrapper'>
